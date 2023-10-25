@@ -1,0 +1,15 @@
+{
+  "name": "wk4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./code.css -o ./tolulope.css --watch"
+  },
+  "author": "tolulope",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

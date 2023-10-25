@@ -1,0 +1,165 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: #eee;
+    display: grid;
+    height: 200vh;
+    place-items: center;
+}
+
+.card {
+    width: 400px;
+    
+}
+
+
+.card-element {
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    color: gold;
+    padding: 7em;
+    transition: transform 3s;
+    background: #000;
+    transform-style: preserve-3d;
+}
+
+
+
+.card:hover .card-element {
+    transform: rotateY(.5turn);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    backface-visibility: hidden;
+}
+
+
+.card-name {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 7.8em;
+} 
+
+.card-number {
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    bottom: 35%;
+    padding-top: 4.5em;
+    padding-right: 2em;
+}
+
+.bank {
+    display: flex;
+    font-size: 1.3em;
+    padding: 0;
+}
+
+.date {
+    display: flex;
+    position: absolute;
+    top: 12em;
+    right: 45%;
+}
+
+
+.ms-card {
+    font-size: 40px;
+    padding-left: 6.7em;
+    padding-top: 3.5em;
+}
+
+.type-bank {
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    top: 3%;
+    right: 2%;
+
+}
+
+.card-back {
+    transform: rotateY(.5turn);
+}
+
+.border {
+    height: 40px;
+    background-color: gold;
+    border-radius: 2px;
+}
+
+.cvv {
+    margin: auto;
+    margin-top: 10px;
+    color: #000;
+    background-color: gold;
+    border-radius: 3px;
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+}
+
+.flexswith {
+    font-size: 40px;
+}
+
+
+.authorise {
+    padding-top: 20px;
+}
+
+.atm {
+    background-color: purple;
+    color: white;
+    padding: 20px 50px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    transition: 3s ease-in-out;
+}
+
+.atm:active {
+    background-color: gold;
+    text-decoration: underline;
+    color: #000;
+    transform: rotate(360deg);
+}
+
+.container {
+    background-color: #222;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    height: 350px;
+    width: 350px;
+    background-image:url(./media/HUGE-DOG2.jpg);
+    background-size: 60%;
+    background-position: center;
+    transition: 2s;
+    border-radius: 50%;
+    border: 5px solid gold;
+    filter: grayscale(100%);
+}
+
+.image:hover {
+    background-size: 150%;
+    background-position: center;
+    filter: grayscale(0%);
+}
