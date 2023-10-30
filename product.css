@@ -1,0 +1,176 @@
+body {
+    background-color: #eee;
+    font-family: 'lato', sans-serif;
+  }
+  
+  .logo {
+    width: 50px;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    background-image: linear-gradient(330deg, #ddd, gray);
+    
+    
+  }
+  
+ 
+  
+  #header-img {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #nav-bar {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  li {
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 550;
+    padding: 0 50px;
+  }
+  
+  .nav-link {
+    color: green;
+    text-decoration: none;
+  }
+  
+  #hero, #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px ;
+  }
+  
+  #hero input[type="email"] {
+    max-width: 280px;
+    min-width: 100px;
+    width: 280px;
+    height: 30px;
+    margin: 14px;
+  }
+  
+  #hero input[type="submit"] {
+    max-width: 155px;
+    width: 100%;
+    height: 30px;
+    background-color: #f1c40f;
+    border: none;
+    font-weight: 900;
+    font-size: 1em;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .icon {
+    width: 20vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fa-solid {
+    color: darkorange;
+    font-size: 50px;
+  }
+  
+  #how_it_works {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img:nth-last-child(1) {
+    width: 200px;
+    border-radius: 5px;
+    border: 5px solid goldenrod;
+  }
+
+  img:nth-last-child(2) {
+    
+  }
+  
+  #pricing {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around; 
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(80/3);
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 3px;
+    min-width: 300px;
+  
+  }
+  
+  .level {
+    background-color: #ddd;
+    color: black;
+    width: 100%;
+    padding: 15px 0; 
+    font-weight: 700;
+  }
+  
+  ol > li {
+    margin-right: 30px;
+  }
+  
+  .btn {
+    background-color: #f1c40f;
+    margin: 15px 0;
+    font-weight: 400;
+    border: 0;
+    width: 30%;
+    height: 30px;
+    font-size: 1em;
+    min-width: 100px;
+  }
+  
+  @media(max-width: 500px) {
+    #pricing {
+      flex-direction: column;
+      align-items: center;
+    }
+    .product {
+      width:300px;
+  }
+}
